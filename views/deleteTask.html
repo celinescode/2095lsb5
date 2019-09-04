@@ -1,0 +1,22 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="/"><img src = "logo.png"/></a><br/>
+    <h1>Delete Task by ID</h1></br>
+    <form action="/deleteTask" method="POST">
+        Task ID: <input type="ObjectId" method="POST" name="taskID"/> </br>
+        <input type="submit" value="Delete" />
+    </form>
+    <h1>Delete All Completed Tasks</h1>
+    <form action="/deleteAll" method="POST">
+        Delete Compelet
+        <input type="submit" value="Submit" /> </br>
+    </form>
+        <a href="/newTask">Add New Task</a><br/>
+        <a href="/update">update</a><br/>
+        <a href="/listTasks">List Task</a></br>
+    
+</body>
+</html>

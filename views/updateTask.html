@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <link rel='stylesheet' href = 'styles.css'>
+</head>
+    <body>
+        <a href="/"><img src = "logo.png"/></a><br/>
+        <h1>
+            Update
+        </h1>
+        <form action="/updateTask" method="POST">
+            Task ID: <input type="ObjectId" method = "POST" name = "taskID"/><br/>
+            New Task Status: 
+            <select name="ntaskStatus">
+            <option value="">Select</option>
+            <option value="InProgress">InProgress</option>
+            <option value="Complete">Complete</option>
+            </select><br/>
+            <button type="submit">Update</button>
+        </form>
+        <a href="/newTask">Add New Task</a><br/>
+        <a href="/delete">Delete Task</a></br>
+        <a href="/listTasks">List Task</a></br>

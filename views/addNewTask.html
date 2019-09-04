@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <link rel='stylesheet' href = 'styles.css'>
+</head>
+    <body>
+        <a href="/"><img src = "logo.png"/></a><br/>
+        <h1>
+            Add New Task
+        </h1>
+        <form action="/addNewTask" method="POST">
+            Task Name: <input type="text" method = "POST" name = "taskName"/><br/>
+            Assign To: <input type="text" method = "POST" name = "assignTo"/><br/>
+            Task Due Date: <input type="date" method = "POST" name = "taskDueDate"/><br/>
+            Task Status:
+            <select name="taskStatus">
+            <option value="">Select</option>
+            <option value="InProgress">InProgress</option>
+            <option value="Complete">Complete</option>
+            </select><br/>
+            Task Description: <input type="text" method = "POST" name = "taskDescription"/><br/>
+            <button type="submit">Add</button>
+        </form>
+        <a href="/">Home</a><br/>
+        <a href="/update">Update</a><br/>
+        <a href="/delete">Delete Task</a></br>
+        <a href="/listTasks">List Task</a></br>
+    </body>
+</html>

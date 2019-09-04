@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+        <link rel='stylesheet' href = 'styles.css'>
+    </head>
+    <body>
+        <a href="/"><img src = "logo.png"/></a><br/>
+        <h1>All To-do Tasks</h1>
+        <table>
+            <tr>
+                <th>Task ID</th>
+                <th>Task Name</th>
+                <th>Assign To</th>
+                <th>Task Due Date</th>
+                <th>Task Status</th>
+                <th>Task Description</th>
+            </tr>
+            <% for(i=0;i<tasks.length;i++){ %>   
+                <tr>
+                    <td> <%= tasks[i]._id %> </td>
+                    <td> <%= tasks[i].name %> </td>
+                    <td> <%= tasks[i].assignName %> </td>
+                    <td> <%= tasks[i].dueDate %> </td>
+                    <td> <%= tasks[i].taskStatus %> </td>
+                    <td> <%= tasks[i].taskDescription %> </td>
+                </tr>    
+            <% }%>
+        </table>
+        <a href="/">Home</a><br/>
+        <a href="/newTask">Add New Task</a><br/>
+        <a href="/update">update</a><br/>
+        <a href="/delete">Delete Task</a></br>
+    </body>
+</html>
